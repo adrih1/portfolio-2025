@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "about": "À propos"
+  },
+  "hero": {
+    "title": "Qui suis-je ?",
+    "subtitle": "Passionné par le développement web et la création d'expériences utilisateur innovantes. Je transforme des idées en applications web modernes et performantes."
+  },
+  "projects": {
+    "title": "Mes Projets",
+    "viewProject": "Voir le projet",
+    "description": "Découvrez mes derniers projets"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "description": "Développeur passionné avec une expertise en développement web",
+    "greeting": "Bonjour ! Je suis Adrien",
+    "paragraph1": "Développeur passionné avec une solide formation en informatique, je m'efforce de créer des solutions innovantes et performantes. Mon parcours m'a permis d'acquérir une expertise dans le développement web moderne, en utilisant les dernières technologies et les meilleures pratiques.",
+    "paragraph2": "Je suis particulièrement intéressé par la création d'interfaces utilisateur intuitives et l'optimisation des performances. Mon approche combine rigueur technique et créativité pour délivrer des expériences numériques exceptionnelles."
+  }
+} 

@@ -1,0 +1,41 @@
+#root {
+  margin: 0 auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  gap: 8px;
+}
+
+.language-switcher button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.language-switcher button:hover {
+  background: #f0f0f0;
+}
+
+.language-switcher button.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+

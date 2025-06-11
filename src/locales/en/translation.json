@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About"
+  },
+  "hero": {
+    "title": "Who am I?",
+    "subtitle": "Passionate about web development and creating innovative user experiences. I transform ideas into modern and performant web applications."
+  },
+  "projects": {
+    "title": "My Projects",
+    "viewProject": "View Project",
+    "description": "Discover my latest projects"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Passionate developer with expertise in web development",
+    "greeting": "Hello ! I'm Adrien",
+    "paragraph1": "As a passionate developer with a solid background in computer science, I strive to create innovative and efficient solutions. My journey has allowed me to gain expertise in modern web development, using the latest technologies and best practices.",
+    "paragraph2": "I am particularly interested in creating intuitive user interfaces and performance optimization. My approach combines technical rigor and creativity to deliver exceptional digital experiences."
+  }
+} 

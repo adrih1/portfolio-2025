@@ -1,0 +1,192 @@
+{
+  "projects": [
+    {
+      "id": "threejs",
+      "title": "Three JS",
+      "date": "2024-03-15",
+      "shortDescription": "Learning Three JS and Blender",
+      "fullDescription": ".",
+      "technologies": ["Three JS", "Blender"],
+      "images": {
+        "main": "/public/projects/cards/threejs.png",
+        "gallery": []
+      },
+      "githubLink": "https://github.com/username/snowcrash",
+      "features": [
+        "🔍 Analyse de failles logiques et structurelles",
+        "🛠️ Utilisation de techniques de debugging avancées",
+        "🔐 Exploration approfondie des concepts de sécurité système"
+      ],
+      "challenges": [
+        "🧠 Compréhension des binaires et des instructions bas niveau",
+        "🔐 Développement de payloads personnalisés",
+        "🐞 Recherche et exploitation de failles logiques"
+      ],
+      "role": "Développeur",
+      "duration": "3 semaines",
+      "teamSize": 2
+    },
+    {
+      "id": "snowcrash",
+      "title": "Snowcrash",
+      "date": "2024-02-01",
+      "shortDescription": "Défi de cybersécurité et reverse engineering",
+      "fullDescription": "Snowcrash est un projet axé sur la cybersécurité, combinant des défis de reverse engineering, d'exploitation de failles et d'analyse de sécurité. L'objectif est de résoudre une série de niveaux en identifiant et en exploitant des vulnérabilités dans le code.",
+      "technologies": ["Assembly", "Linux", "Reverse Engineering", "Exploit Development"],
+      "images": {
+        "main": "/public/projects/cards/snowcrash.jpg",
+        "gallery": []
+      },
+      "githubLink": "https://github.com/username/snowcrash",
+      "features": [
+        "🔍 Analyse de failles logiques et structurelles",
+        "🛠️ Utilisation de techniques de debugging avancées",
+        "🔐 Exploration approfondie des concepts de sécurité système"
+      ],
+      "challenges": [
+        "🧠 Compréhension des binaires et des instructions bas niveau",
+        "🔐 Développement de payloads personnalisés",
+        "🐞 Recherche et exploitation de failles logiques"
+      ],
+      "role": "Développeur",
+      "duration": "3 semaines",
+      "teamSize": 2
+    },
+    {
+      "id": "transcendance",
+      "title": "Transcendance",
+      "date": "2024-01-15",
+      "shortDescription": "Application web complète avec Node.js et React",
+      "fullDescription": "Transcendance est un projet complet de développement web combinant front-end et back-end. Le but est de développer un site web permattant aux users de jouer au jeu 'pong'. Le projet met en œuvre une architecture microservices complète et moderne, avec gestion d'utilisateurs, système de chat, tournois multijoueurs, et jeu en ligne en WebSocket.",
+      "technologies": ["Node.js", "React", "Typescript", "Tailwind", "WebSockets", "PostgreSQL", "Docker", "Babylon JS"],
+      "images": {
+        "main": "/public/projects/cards/transcendance.jpg",
+        "gallery": []
+      },
+      "githubLink": "https://github.com/Illouminus/transcendence",
+      "features": [
+        "🔒 Inscription / Connexion sécurisée (OAuth et système 2FA",
+        "🧑‍🤝‍🧑 Liste d'amis, statut en ligne, invitation",
+        "💬 Chat en temps réel (privé et global)",
+       " 🏓 Matchs 1v1, contre IA ou en tournoi",
+        "🏆 Système complet de championnat avec demi-finales, finale et match pour la 3e place",
+       " 📈 Mise à jour des scores et du classement en direct",
+       " 🖼️ UI 3D interactive et responsive (Babylon JS)",
+        "🐳 Déploiement avec Docker pour un environnement cohérent"
+      ],
+      "challenges": [
+        "🔒 Intégration du système 2FA sécurisé",
+        "⚡ Optimisation des WebSockets pour la communication en temps réel",
+        "💾 Gestion de la persistance des données et des sessions"
+      ],
+      "role": "Développeur Full Stack",
+      "duration": "2 mois",
+      "teamSize": 4
+    },
+    {
+      "id": "push_swap",
+      "title": "Push Swap",
+      "date": "2023-12-01",
+      "shortDescription": "Tri par piles optimisé en C",
+      "fullDescription": "Push Swap est un projet d'algorithmique consistant à trier une pile d'entiers en un minimum de coups, en utilisant uniquement deux piles et des opérations prédéfinies. Ce projet met l'accent sur la conception d'algorithmes optimisés et sur la gestion efficace des données.",
+      "technologies": ["C", "Algorithm Design", "Data Structures"],
+      "images": {
+        "main": "/public/projects/cards/pushswap.jpg",
+        "gallery": []
+      },
+      "githubLink": "https://github.com/adrih1/Ecole42/tree/main/CommonCore/Push_swap",
+      "features": [
+        "📊 Implémentation d'un tri optimisé",
+        "🧮 Gestion des structures de données dynamiques",
+        "🚀 Analyse des performances des algorithmes"
+      ],
+      "challenges": [
+        "🛠️ Conception d'algorithmes efficaces pour des données limitées",
+        "🎯 Minimisation des mouvements pour améliorer les scores",
+        "⚠️ Gestion des erreurs et des entrées invalides"
+      ],
+      "role": "Développeur",
+      "duration": "3 semaine",
+      "teamSize": 1
+    },
+
+    {
+      "id": "inception",
+      "title": "Inception",
+      "date": "2023-11-15",
+      "shortDescription": "Déploiement de services dans des conteneurs Docker",
+      "fullDescription": "Inception est un projet qui se concentre sur la virtualisation et l'orchestration de conteneurs Docker. Il s'agit de configurer et de gérer plusieurs services comme une base de données, un serveur web et d'autres outils, tous encapsulés dans des conteneurs.",
+      "technologies": ["Docker", "NGINX", "Docker Compose", "WordPress", "MariaDB"],
+      "images": {
+        "main": "/public/projects/cards/inception.jpg",
+        "gallery": []
+      },
+      "githubLink": "https://github.com/adrih1/Ecole42/tree/main/CommonCore/Inception",
+      "features": [
+        "🔧 Configuration de multiples services dans des conteneurs isolés",
+        "🌐 Déploiement d'une stack complète avec NGINX, WordPress et MariaDB",
+        "📦 Utilisation de Docker Compose pour l'orchestration"
+      ],
+      "challenges": [
+        "🌐 Gestion des réseaux et volumes Docker",
+        "🛡️ Sécurisation des services et des conteneurs",
+        "🏗️ Création d'une infrastructure modulable et extensible"
+      ],
+      "role": "Administrateur Système et Développeur",
+      "duration": "1 mois et demi",
+      "teamSize": 1
+    },        
+    {
+      "id": "philosophers",
+      "title": "Philosophers",
+      "date": "2023-10-01",
+      "shortDescription": "Simulation de l'algorithme du problème des philosophes",
+      "fullDescription": "Philosophes est un projet basé sur un problème classique en informatique : le problème des philosophes. Il met en avant la gestion des threads, des mutex et la résolution des problèmes de synchronisation et de compétition pour les ressources.",
+      "technologies": ["C", "Multithreading", "Synchronization"],
+      "images": {
+        "main": "/public/projects/cards/philosophers.jpg",
+        "gallery": []
+      },
+      "githubLink": "https://github.com/adrih1/Ecole42/tree/main/CommonCore/Philosophers",
+      "features": [
+        "🌀 Simulation concurrente des philosophes",
+        "🔒 Gestion des threads et des mutex",
+        "🧠 Résolution des problèmes de famine et d'interblocage"
+      ],
+      "challenges": [
+        "🔄 Mise en œuvre efficace des mécanismes de synchronisation",
+        "⚔️ Minimisation des problèmes de contention",
+        "🔧 Implémentation robuste et stable sur plusieurs cycles"
+      ],
+      "role": "Développeur",
+      "duration": "2 semaines",
+      "teamSize": 1
+    },
+    {
+      "id": "cub3d",
+      "title": "Cub3D",
+      "date": "2023-09-15",
+      "shortDescription": "Mini-jeu 3D basé sur le raycasting",
+      "fullDescription": "Cub3D est un projet de programmation graphique où le but est de créer un jeu en vue à la première personne en utilisant le raycasting. Ce projet combine des compétences en mathématiques, en gestion graphique et en optimisation du rendu.",
+      "technologies": ["C", "Raycasting", "OpenGL"],
+      "images": {
+        "main": "/public/projects/cards/cub3d.png",
+        "gallery": []
+      },
+      "githubLink": "https://github.com/adrih1/cub3d",
+      "features": [
+        "🖼️ Rendu graphique en temps réel avec raycasting",
+        "🎮 Implémentation de collisions et d'interactions",
+        "🏗️ Création de niveaux personnalisés"
+      ],
+      "challenges": [
+        "🚀 Gestion des performances pour le rendu en temps réel",
+        "📐 Implémentation mathématique précise pour le raycasting",
+        "🐞 Débogage des artefacts visuels"
+      ],
+      "role": "Développeur",
+      "duration": "1 mois",
+      "teamSize": 2
+    }
+  ]
+}
