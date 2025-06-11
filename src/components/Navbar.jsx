@@ -27,7 +27,7 @@ function Navbar() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ delay: 0.3, duration: 1, ease: "easeOut" }}
+      transition={{ delay: 0.31, duration: 1, ease: "easeOut" }}
       style={{
         width,
         backgroundColor,
