@@ -49,6 +49,7 @@ function FadeTransition({ children }) {
 function AppContent() {
   const location = useLocation();
   const showNavbar = ['/', '/about'].includes(location.pathname);
+  const showParticles = ['/', '/about'].includes(location.pathname);
   const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem('theme');
     return savedTheme || 'light';
@@ -75,18 +76,20 @@ function AppContent() {
 
   return (
     <>
-      <div className="fixed inset-0 z-0 pointer-events-none">
-        <Particles
-          particleColors={theme === 'light' ? ['#000000', '#669bbc'] : ['#ffffff', '#669bbc']}
-          particleCount={300}
-          particleSpread={5}
-          speed={0.1}
-          particleBaseSize={150}
-          moveParticlesOnHover={false}
-          alphaParticles={false}
-          disableRotation={false}
-        />
-      </div>
+      {showParticles && (
+        <div className="fixed inset-0 z-0 pointer-events-none">
+          <Particles
+            particleColors={theme === 'light' ? ['#000000', '#669bbc'] : ['#ffffff', '#669bbc']}
+            particleCount={300}
+            particleSpread={5}
+            speed={0.1}
+            particleBaseSize={150}
+            moveParticlesOnHover={false}
+            alphaParticles={false}
+            disableRotation={false}
+          />
+        </div>
+      )}
       <ScrollToTop />
       {showNavbar && <Navbar />}
       {location.pathname === '/' && <Hero />}
