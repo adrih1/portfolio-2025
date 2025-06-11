@@ -8,7 +8,7 @@
       "fullDescription": ".",
       "technologies": ["Three JS", "Blender"],
       "images": {
-        "main": "/public/projects/cards/threejs.png",
+        "main": "/projects/cards/threejs.png",
         "gallery": []
       },
       "githubLink": "https://github.com/username/snowcrash",
@@ -34,7 +34,7 @@
       "fullDescription": "Snowcrash est un projet axé sur la cybersécurité, combinant des défis de reverse engineering, d'exploitation de failles et d'analyse de sécurité. L'objectif est de résoudre une série de niveaux en identifiant et en exploitant des vulnérabilités dans le code.",
       "technologies": ["Assembly", "Linux", "Reverse Engineering", "Exploit Development"],
       "images": {
-        "main": "/public/projects/cards/snowcrash.jpg",
+        "main": "/projects/cards/snowcrash.jpg",
         "gallery": []
       },
       "githubLink": "https://github.com/username/snowcrash",
@@ -60,7 +60,7 @@
       "fullDescription": "Transcendance est un projet complet de développement web combinant front-end et back-end. Le but est de développer un site web permattant aux users de jouer au jeu 'pong'. Le projet met en œuvre une architecture microservices complète et moderne, avec gestion d'utilisateurs, système de chat, tournois multijoueurs, et jeu en ligne en WebSocket.",
       "technologies": ["Node.js", "React", "Typescript", "Tailwind", "WebSockets", "PostgreSQL", "Docker", "Babylon JS"],
       "images": {
-        "main": "/public/projects/cards/transcendance.jpg",
+        "main": "/projects/cards/transcendance.jpg",
         "gallery": []
       },
       "githubLink": "https://github.com/Illouminus/transcendence",
@@ -91,7 +91,7 @@
       "fullDescription": "Push Swap est un projet d'algorithmique consistant à trier une pile d'entiers en un minimum de coups, en utilisant uniquement deux piles et des opérations prédéfinies. Ce projet met l'accent sur la conception d'algorithmes optimisés et sur la gestion efficace des données.",
       "technologies": ["C", "Algorithm Design", "Data Structures"],
       "images": {
-        "main": "/public/projects/cards/pushswap.jpg",
+        "main": "/projects/cards/pushswap.jpg",
         "gallery": []
       },
       "githubLink": "https://github.com/adrih1/Ecole42/tree/main/CommonCore/Push_swap",
@@ -118,7 +118,7 @@
       "fullDescription": "Inception est un projet qui se concentre sur la virtualisation et l'orchestration de conteneurs Docker. Il s'agit de configurer et de gérer plusieurs services comme une base de données, un serveur web et d'autres outils, tous encapsulés dans des conteneurs.",
       "technologies": ["Docker", "NGINX", "Docker Compose", "WordPress", "MariaDB"],
       "images": {
-        "main": "/public/projects/cards/inception.jpg",
+        "main": "/projects/cards/inception.jpg",
         "gallery": []
       },
       "githubLink": "https://github.com/adrih1/Ecole42/tree/main/CommonCore/Inception",
@@ -144,7 +144,7 @@
       "fullDescription": "Philosophes est un projet basé sur un problème classique en informatique : le problème des philosophes. Il met en avant la gestion des threads, des mutex et la résolution des problèmes de synchronisation et de compétition pour les ressources.",
       "technologies": ["C", "Multithreading", "Synchronization"],
       "images": {
-        "main": "/public/projects/cards/philosophers.jpg",
+        "main": "/projects/cards/philosophers.jpg",
         "gallery": []
       },
       "githubLink": "https://github.com/adrih1/Ecole42/tree/main/CommonCore/Philosophers",
@@ -170,7 +170,7 @@
       "fullDescription": "Cub3D est un projet de programmation graphique où le but est de créer un jeu en vue à la première personne en utilisant le raycasting. Ce projet combine des compétences en mathématiques, en gestion graphique et en optimisation du rendu.",
       "technologies": ["C", "Raycasting", "OpenGL"],
       "images": {
-        "main": "/public/projects/cards/cub3d.png",
+        "main": "/projects/cards/cub3d.png",
         "gallery": []
       },
       "githubLink": "https://github.com/adrih1/cub3d",
