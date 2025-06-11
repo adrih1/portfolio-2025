@@ -29,7 +29,7 @@ function Projects() {
     };
   
     return (
-      <section id="projects" className="py-16">
+      <section id="projects" className="py-8 md:py-16">
         {isThreeJSHovered && (
           <div 
             className="fixed pointer-events-none z-50"
@@ -48,8 +48,8 @@ function Projects() {
           </div>
         )}
         <div className="container mx-auto px-4">
-          <h2 className="text-6xl font-bold mb-16 pl-4">My Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <h2 className="text-4xl md:text-6xl font-bold mb-8 md:mb-16 pl-4">My Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
             {projects.map((project, index) => (
               <div 
                 key={index} 
@@ -62,7 +62,7 @@ function Projects() {
                       e.preventDefault();
                     }
                   }}
-                  className="relative rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 w-full h-[400px] group bg-gray-900 cursor-pointer"
+                  className="relative rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 w-full h-[300px] md:h-[400px] group bg-gray-900 cursor-pointer"
                   onMouseMove={(e) => {
                     handleMouseMove(e);
                     if (project.id === 'threejs') {
@@ -94,20 +94,20 @@ function Projects() {
                     />
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/40 transition-opacity duration-300 group-hover:opacity-60" />
-                  <div className="relative p-8 h-full flex flex-col justify-between text-white" style={{ transform: 'translateZ(20px)' }}>
-                    <div className="flex justify-between items-center">
-                      <div className="flex items-center gap-3 max-w-[70%]">
+                  <div className="relative p-4 md:p-8 h-full flex flex-col justify-between text-white" style={{ transform: 'translateZ(20px)' }}>
+                    <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 md:gap-0">
+                      <div className="flex flex-wrap items-center gap-2 md:gap-3 max-w-full md:max-w-[70%]">
                         {project.technologies.slice(0, 2).map((tech, i) => (
                           <span 
                             key={i} 
-                            className="px-4 py-2 bg-white/20 backdrop-blur-xs rounded-full text-lg min-w-16 text-center 
+                            className="px-2 md:px-4 py-1 md:py-2 bg-white/20 backdrop-blur-xs rounded-full text-sm md:text-lg min-w-12 md:min-w-16 text-center 
                                      hover:bg-white/30 hover:scale-105 transition-all duration-300 cursor-default whitespace-nowrap"
                           >
                             {tech}
                           </span>
                         ))}
                         {project.technologies.length > 2 && (
-                          <span className="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-lg min-w-16 text-center 
+                          <span className="px-2 md:px-4 py-1 md:py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm md:text-lg min-w-12 md:min-w-16 text-center 
                                          hover:bg-white/30 hover:scale-105 transition-all duration-300 cursor-default">
                             +{project.technologies.length - 2}
                           </span>
@@ -117,7 +117,7 @@ function Projects() {
                         href={project.githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-white hover:text-blue-300 font-medium text-xl inline-block transition-colors duration-300 whitespace-nowrap ml-4 relative z-10"
+                        className="text-white hover:text-blue-300 font-medium text-base md:text-xl inline-block transition-colors duration-300 whitespace-nowrap relative z-10"
                         onClick={(e) => e.stopPropagation()}
                       >
                         Code source →
@@ -125,9 +125,9 @@ function Projects() {
                     </div>
                     <div>
                       <div className="flex justify-between items-center mb-2">
-                        <h3 className="text-4xl font-semibold">{project.title}</h3>
+                        <h3 className="text-2xl md:text-4xl font-semibold">{project.title}</h3>
                       </div>
-                      <p className="text-gray-200 text-xl leading-relaxed">{project.shortDescription}</p>
+                      <p className="text-gray-200 text-base md:text-xl leading-relaxed">{project.shortDescription}</p>
                       <button
                         onClick={(e) => {
                           e.preventDefault();
@@ -135,7 +135,7 @@ function Projects() {
                             navigate(`/projects/${project.id}`);
                           }
                         }}
-                        className={`mt-6 px-6 py-3 rounded-lg transition-all duration-300 ${
+                        className={`mt-4 md:mt-6 px-4 md:px-6 py-2 md:py-3 rounded-lg transition-all duration-300 text-sm md:text-base ${
                           project.id !== 'threejs'
                             ? 'bg-white/20 hover:bg-white/30 hover:cursor-pointer' 
                             : 'bg-white/10 cursor-not-allowed opacity-50'

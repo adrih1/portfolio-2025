@@ -3,11 +3,12 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import { useTranslation } from 'react-i18next'
 import ThemeToggle from "./ThemeToggle"
 import LanguageSelector from "./LanguageSelector"
+import { useState } from "react"
 
 function Navbar() {
   const { scrollY } = useScroll()
   const { t, i18n } = useTranslation();
-
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const width = useTransform(scrollY, [0, 800], ["95%", "60%"])
   const backgroundColor = useTransform(
@@ -32,10 +33,22 @@ function Navbar() {
         width,
         backgroundColor,
       }}
-      className="fixed top-0 left-0 right-0 mx-auto my-4 py-4 px-8 backdrop-blur-sm shadow-sm rounded-full z-50"
+      className="fixed top-0 left-0 right-0 mx-auto my-4 py-4 px-4 md:px-8 backdrop-blur-sm shadow-sm rounded-xl md:rounded-full z-50"
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between relative">
-        <div className="flex-1">
+        {/* Mobile menu button */}
+        <button
+          className="md:hidden p-2"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          <div className="w-6 h-0.5 bg-white mb-1.5"></div>
+          <div className="w-6 h-0.5 bg-white mb-1.5"></div>
+          <div className="w-6 h-0.5 bg-white"></div>
+        </button>
+
+        {/* Desktop menu */}
+        <div className="hidden md:flex flex-1">
           <motion.li style={{ color: textColor }} className="hover:text-gray-300 transition-colors inline-block list-none">
             <a href={cvFile} target="_blank" rel="noopener noreferrer">CV</a>
           </motion.li>
@@ -45,18 +58,44 @@ function Navbar() {
           <a href="/">Adrien</a>
         </motion.li>
 
-        <div className="flex-1 flex items-center justify-end gap-6">
+        <div className="hidden md:flex flex-1 items-center justify-end gap-6">
           <motion.li style={{ color: textColor }} className="hover:text-gray-300 transition-colors list-none">
             <a href="mailto:your.email@example.com">Email</a>
           </motion.li>
           <motion.li style={{ color: textColor }} className="hover:text-gray-300 transition-colors list-none">
             <a href="/about">{t('nav.about')}</a>
-         
           </motion.li>
           <LanguageSelector />
           <ThemeToggle />
         </div>
       </div>
+
+      {/* Mobile menu */}
+      <motion.div
+        initial={{ opacity: 0, height: 0 }}
+        animate={{ 
+          opacity: isMenuOpen ? 1 : 0,
+          height: isMenuOpen ? "auto" : 0
+        }}
+        transition={{ duration: 0.3 }}
+        className="md:hidden overflow-hidden"
+      >
+        <div className="flex flex-col items-center gap-4 py-4">
+          <motion.li style={{ color: textColor }} className="hover:text-gray-300 transition-colors list-none">
+            <a href={cvFile} target="_blank" rel="noopener noreferrer">CV</a>
+          </motion.li>
+          <motion.li style={{ color: textColor }} className="hover:text-gray-300 transition-colors list-none">
+            <a href="mailto:your.email@example.com">Email</a>
+          </motion.li>
+          <motion.li style={{ color: textColor }} className="hover:text-gray-300 transition-colors list-none">
+            <a href="/about">{t('nav.about')}</a>
+          </motion.li>
+          <div className="flex items-center gap-4">
+            <LanguageSelector />
+            <ThemeToggle />
+          </div>
+        </div>
+      </motion.div>
     </motion.nav>
   )
 }
