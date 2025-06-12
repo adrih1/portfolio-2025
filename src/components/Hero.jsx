@@ -19,6 +19,9 @@ function Hero() {
             src="/avatar.jpg" 
             alt="Adrien Hors" 
             className="w-full h-full object-cover"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
           />
         </motion.div>
         <div className="flex flex-col gap-4 w-full md:w-1/2 text-center md:text-left">

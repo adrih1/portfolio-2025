@@ -80,7 +80,7 @@ function AppContent() {
         <div className="fixed inset-0 z-0 pointer-events-none">
           <Particles
             particleColors={theme === 'light' ? ['#000000', '#669bbc'] : ['#ffffff', '#669bbc']}
-            particleCount={300}
+            particleCount={150}
             particleSpread={5}
             speed={0.1}
             particleBaseSize={150}
