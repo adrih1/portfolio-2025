@@ -60,7 +60,7 @@ function Navbar() {
 
         <div className="hidden md:flex flex-1 items-center justify-end gap-6">
           <motion.li style={{ color: textColor }} className="hover:text-gray-300 transition-colors list-none">
-            <a href="mailto:your.email@example.com">Email</a>
+            <a href="mailto:adrienhors1@gmail.com">Email</a>
           </motion.li>
           <motion.li style={{ color: textColor }} className="hover:text-gray-300 transition-colors list-none">
             <a href="/about">{t('nav.about')}</a>
@@ -85,7 +85,7 @@ function Navbar() {
             <a href={cvFile} target="_blank" rel="noopener noreferrer">CV</a>
           </motion.li>
           <motion.li style={{ color: textColor }} className="hover:text-gray-300 transition-colors list-none">
-            <a href="mailto:your.email@example.com">Email</a>
+            <a href="mailto:adrienhors1@gmail.com">Email</a>
           </motion.li>
           <motion.li style={{ color: textColor }} className="hover:text-gray-300 transition-colors list-none">
             <a href="/about">{t('nav.about')}</a>
