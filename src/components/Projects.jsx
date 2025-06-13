@@ -1,10 +1,12 @@
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import projectsData from '../data/projects.json';
 import CircularText from '../assets/CircularText/CircularText';
 
 function Projects() {
     const navigate = useNavigate();
+    const { t } = useTranslation();
     const projects = [...projectsData.projects].sort((a, b) => new Date(b.date) - new Date(a.date));
     const [isThreeJSHovered, setIsThreeJSHovered] = useState(false);
     
@@ -122,7 +124,7 @@ function Projects() {
                         className="text-white hover:text-blue-300 font-medium text-base md:text-xl inline-block transition-colors duration-300 whitespace-nowrap relative z-10"
                         onClick={(e) => e.stopPropagation()}
                       >
-                        Code source →
+                        {t('projects.sourceCode')} →
                       </a>
                     </div>
                     <div>
@@ -143,7 +145,7 @@ function Projects() {
                             : 'bg-white/10 cursor-not-allowed opacity-50'
                         }`}
                       >
-                        En savoir plus
+                        {t('projects.learnMore')}
                       </button>
                     </div>
                   </div>

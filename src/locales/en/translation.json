@@ -11,7 +11,9 @@
   "projects": {
     "title": "My Projects",
     "viewProject": "View Project",
-    "description": "Discover my latest projects"
+    "description": "Discover my latest projects",
+    "sourceCode": "Source code",
+    "learnMore": "Learn more"
   },
   "about": {
     "title": "About Me",
