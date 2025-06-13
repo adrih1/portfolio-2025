@@ -58,9 +58,11 @@ function Projects() {
                 <a
                   href={project.id === 'threejs' ? '#' : `/projects/${project.id}`}
                   onClick={(e) => {
+                    e.preventDefault();
                     if (project.id === 'threejs') {
-                      e.preventDefault();
+                      return;
                     }
+                    navigate(`/projects/${project.id}`);
                   }}
                   className="relative rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 w-full h-[300px] md:h-[400px] group bg-gray-900 cursor-pointer"
                   onMouseMove={(e) => {
